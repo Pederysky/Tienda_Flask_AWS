@@ -3,10 +3,10 @@ import os
 SECRET_KEY = 'A0Zr98j/3yX R~XHH!jmN]LWX/,?RT'
 PWD = os.path.abspath(os.curdir)
 
-DEBUG = True # En despliegue esto pasa a FALSE
+DEBUG = False # En despliegue esto pasa a FALSE
 #SQLALCHEMY_DATABASE_URI = 'sqlite:///{}/dbase.db'.format(PWD)
 #SQLALCHEMY_DATABASE_URI = "postgresql://tienda_8_2_user:oTufaBIdBGEsJz0iNVCsijNbRBMGYqLU@dpg-ctn5trrtq21c73fe2860-a.frankfurt-postgres.render.com/tienda_8_2"
-SQLALCHEMY_DATABASE_URI = 'postgresql://pedro:p5MBNZ8eyCaTUfJR6XYm@faskdb.cxdnuq9mt6dm.us-east-1.rds.amazonaws.com:5432/flaskdb'
+SQLALCHEMY_DATABASE_URI = 'postgresql+psycopg2://pedro:p5MBNZ8eyCaTUfJR6XYm@faskdb.cxdnuq9mt6dm.us-east-1.rds.amazonaws.com:5432/flaskdb'
 SQLALCHEMY_TRACK_MODIFICATIONS = False
 
 # Ejemplo basico de postgresql
